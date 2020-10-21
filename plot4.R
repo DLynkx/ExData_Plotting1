@@ -19,7 +19,7 @@ submetering3 <- as.numeric(subpow$Sub_metering_3)
 
 
 ## Plotting
-png("plot4.png")
+png("plot4.png", width = 480, height = 480)
 
 ## Grid the output sheet
 par(mfrow = c(2, 2)) 

@@ -13,7 +13,7 @@ submetering2 <- as.numeric(subpow$Sub_metering_2)
 submetering3 <- as.numeric(subpow$Sub_metering_3)
 
 ## Plotting
-png("plot3.png")
+png("plot3.png", width = 480, height = 480)
 plot(datetime, submetering1, type="l", ylab="Energy Submetering", xlab="")
 lines(datetime, submetering2, type="l", col="red")
 lines(datetime, submetering3, type="l", col="blue")
