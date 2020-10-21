@@ -1,4 +1,5 @@
 ## Read entire data
+library(lubridate)
 
 pow <- read.csv2("./exdata_data_household_power_consumption/household_power_consumption.txt")
 
@@ -13,6 +14,6 @@ globalactivepower <- as.numeric(subpow$Global_active_power)
 
 
 ## Plotting
-png("plot1.png")
+#png("plot1.png")
 hist(globalactivepower, xlab = "Global Active Power (kilowatts)", col = "red", main = "Global Active Power")
-dev.off()
+#dev.off()
